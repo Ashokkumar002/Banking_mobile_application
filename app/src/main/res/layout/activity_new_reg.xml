@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_reg">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0"
+        android:gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Username"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:hint="Enter your username" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Password"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:inputType="textPassword"
+                android:hint="Enter your password" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="Confirm Password"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:inputType="textPassword"
+                android:hint="Confirm your password" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="Email"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your phone number:"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:hint="Phone number"
+                android:inputType="phone"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="@android:dimen/app_icon_size"
+                android:layout_span="@integer/material_motion_duration_long_2"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

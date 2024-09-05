@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransferMoneyActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Deposit"
+        android:gravity="center"
+        android:text="Transfer Money"
+        android:paddingVertical="100dp"
+        android:textSize="30dp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SENDER'S NUMBER:"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:id="@+id/sname"
+                />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/snumber"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RECEIVER'S NUMBER:"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:id="@+id/rname"
+                />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rnumber"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AMOUNT TO SEND:"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:id="@+id/send"
+                />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount"
+                />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="SEND"
+                android:id="@+id/clickme"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+</RelativeLayout>

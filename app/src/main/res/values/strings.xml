@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">KK_Bank</string>
+    <string name="bank" translatable="false">KK Bank</string>
+    <string name="newuser" translatable="false">New User Register</string>
+</resources>

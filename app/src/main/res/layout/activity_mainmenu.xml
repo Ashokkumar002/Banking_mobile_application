@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainmenu"
+    android:padding="16dp"
+    >
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/your_logo"
+        android:scaleType="centerCrop"/>
+    <!-- Deposit Button -->
+    <Button
+        android:id="@+id/buttonDeposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deposit"
+        android:layout_below="@id/textViewHeader"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!-- Withdrawal Button -->
+    <Button
+        android:id="@+id/buttonWithdrawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Withdrawal"
+        android:layout_below="@id/buttonDeposit"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to KKBank"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/imageViewLogo"/>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/buttonAccountBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Balance"
+        android:layout_below="@id/buttonWithdrawal"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonTransferMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer Money"
+        android:layout_below="@id/buttonAccountBalance"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- History Button -->
+    <Button
+        android:id="@+id/buttonHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction History"
+        android:layout_below="@id/buttonTransferMoney"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
